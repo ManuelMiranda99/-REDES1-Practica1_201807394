@@ -9,9 +9,100 @@
 
 # Practica 1 - Manual de Configuración
 
-### Configuración de la topología de red en GNS3
+## Configuración de la topología de red en GNS3
 
-### Glosario
+La topología de red que se nos presento para realizar para la práctica es la siguiente (Ya agregada las IPs correspondientes):
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/Topologia.PNG "Topologia de Red")
+
+Para la configuración de la red se hizo uso de GNS3 para su simulación. Se conectaron el Router, Switches, VPCS y la máquina virtual de TinyCore Linux dentro de la interfaz de GNS3. 
+
+Las configuraciones de los dispositivos usados para la pr[actica se detallan a continuación.
+
+### Router
+
+El router es un dispositivo que nos proporciona conectividad a nivel de red. Este conecta con otras redes o subredes para enviar datos a través de estas. La configuración del router se detalla a continuación:
+
+#### Mostrar IPs
+
+Primero se debería de observar las interfaces que trae el router por "defecto". Para esto se usa el comando:
+
+'''
+sh ip int brief
+'''
+
+Nos muestra el siguiente resultado:
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/Router/ShowIPs.PNG "Mostrar Interfaces")
+
+#### Entrar a la Configuración
+
+Luego de saber que configuraciones tienen las interfaces de nuestro router vamos a ingresar a una de estas para configurarla. Primero se configuro el lado izquierdo de la red. El comando para entrar a la configuración es:
+
+'''
+conf t
+int (Nombre De Interfaz)
+'''
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/Router/EnterInterface.PNG "Entrar a configuracion")
+
+Notaremos que en la línea de comandos cambia y nos agrega paréntesis con el texto _config-if_.
+
+#### Colocar una IP a la Gateway
+
+Para colocarle una IP a la puerta de enlace de nuestra interfaz se debe de usar el siguiente comando:
+
+'''
+ip address (IP) (Máscara de Red)
+'''
+
+De la siguiente manera:
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/Router/SetIP.PNG "Settear Gateway 1")
+
+Luego de eso ya tenemos colocada la IP de nuestra puerta de enlace de la primera interfaz. Ya solo falta salir de la configuración de la interfaz y confirmar que se haya realizado bien la configuración. Le damos al comando _exit_ hasta que la consola únicamente tenga _R1#_ en ella. 
+
+#### Confirmar IP de Gateway
+
+Para confirmar la IP de nuestra puerta de enlace se debe de utilizar el comando que utilizamos antes par amostrar IPs. Ahora se mostrará un resultado distinto:
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/Router/ConfirmInterface.PNG "Primera puerta de enlace configurada")
+
+#### Para interfaz 0/1
+
+Para la siguiente interfaz se realizan los mismos pasos pero asignando una puerta de enlace distinta y al momento de entrar a la configuración se usará 0/1 en vez de 0/0.
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/Router/ConfigureLastInterface.PNG "Segunda puerta de enlace configurada")
+
+#### Guardar Cambios
+
+Luego de realizar los cambios correspondientes se deben de guardar las configuraciones con el comando siguiente para tenerlos disponibles después cuando se vuelva a iniciar el proyecto.
+
+'''
+wr
+'''
+
+Luego para confirmar todas las configuraciones procederemos a usar el comando:
+
+'''
+sh run
+'''
+
+Este nos mostrará todas las configuraciones que tiene nuestro router. Para avanzar se le dará al espacio hasta que ya hayamos finalizado de configurar nuestro router.
+
+### VPCS
+
+Las configuraciones de VPCS son prácticamente idénticas en todos los VPCS. Únicamente cambian las IPs y puertas de enlace para las distintas VPCS.
+
+#### VPCS 1 (PC1):
+
+#### VPCS 2 (PC2):
+
+#### VPCS 3 (PC3):
+
+### Máquina Virtual
+
+## Glosario
 
 Se preparo un glosario con términos que son importantes para la realización de la práctica y entender la red un poco mejor. 
 
