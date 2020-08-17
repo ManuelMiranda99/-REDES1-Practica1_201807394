@@ -239,7 +239,7 @@
             },
             {
                 "filters": {},
-                "link_id": "de6fd35e-18e8-407b-84a1-acfd46d35209",
+                "link_id": "4b2e5e6a-41b2-46ab-a34b-533aca988aec",
                 "nodes": [
                     {
                         "adapter_number": 0,
@@ -247,8 +247,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e2",
-                            "x": 2,
-                            "y": 38
+                            "x": 1,
+                            "y": 36
                         },
                         "node_id": "69b9e37c-d345-43f0-8e32-9fe0da9ee896",
                         "port_number": 2
@@ -259,10 +259,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 65,
-                            "y": 7
+                            "x": 66,
+                            "y": 8
                         },
-                        "node_id": "84642aa3-3d9a-4215-b2f6-939006d64368",
+                        "node_id": "8bc89c3e-c4bd-4ade-84e4-88c5766427af",
                         "port_number": 0
                     }
                 ],
@@ -571,7 +571,7 @@
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
                 "x": 38,
-                "y": 5,
+                "y": 6,
                 "z": 1
             },
             {
@@ -585,13 +585,13 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Linux-1",
-                    "x": 5,
+                    "text": "TinyLinux-1",
+                    "x": -8,
                     "y": -25
                 },
                 "locked": false,
-                "name": "Linux-1",
-                "node_id": "84642aa3-3d9a-4215-b2f6-939006d64368",
+                "name": "TinyLinux-1",
+                "node_id": "8bc89c3e-c4bd-4ade-84e4-88c5766427af",
                 "node_type": "vmware",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -606,10 +606,10 @@
                     "vmx_path": "C:\\Users\\Manuel\\Documents\\Virtual Machines\\TinyLinux\\TinyLinux.vmx"
                 },
                 "symbol": ":/symbols/vmware_guest.svg",
-                "template_id": "64e7d734-624f-4eb6-91a1-20311f7a3268",
+                "template_id": "a4ca624f-b1bf-4eda-bf00-2dd5a735ee19",
                 "width": 65,
                 "x": -964,
-                "y": -12,
+                "y": -31,
                 "z": 1
             }
         ]
