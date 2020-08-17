@@ -27,9 +27,9 @@ El router es un dispositivo que nos proporciona conectividad a nivel de red. Est
 
 Primero se debería de observar las interfaces que trae el router por "defecto". Para esto se usa el comando:
 
-'''
+```
 sh ip int brief
-'''
+```
 
 Nos muestra el siguiente resultado:
 
@@ -39,10 +39,10 @@ Nos muestra el siguiente resultado:
 
 Luego de saber que configuraciones tienen las interfaces de nuestro router vamos a ingresar a una de estas para configurarla. Primero se configuro el lado izquierdo de la red. El comando para entrar a la configuración es:
 
-'''
+```
 conf t
 int (Nombre De Interfaz)
-'''
+```
 
 ![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/Router/EnterInterface.PNG "Entrar a configuracion")
 
@@ -52,9 +52,9 @@ Notaremos que en la línea de comandos cambia y nos agrega paréntesis con el te
 
 Para colocarle una IP a la puerta de enlace de nuestra interfaz se debe de usar el siguiente comando:
 
-'''
+```
 ip address (IP) (Máscara de Red)
-'''
+```
 
 De la siguiente manera:
 
@@ -78,15 +78,15 @@ Para la siguiente interfaz se realizan los mismos pasos pero asignando una puert
 
 Luego de realizar los cambios correspondientes se deben de guardar las configuraciones con el comando siguiente para tenerlos disponibles después cuando se vuelva a iniciar el proyecto.
 
-'''
+```
 wr
-'''
+```
 
 Luego para confirmar todas las configuraciones procederemos a usar el comando:
 
-'''
+```
 sh run
-'''
+```
 
 Este nos mostrará todas las configuraciones que tiene nuestro router. Para avanzar se le dará al espacio hasta que ya hayamos finalizado de configurar nuestro router.
 
