@@ -239,7 +239,7 @@
             },
             {
                 "filters": {},
-                "link_id": "4b2e5e6a-41b2-46ab-a34b-533aca988aec",
+                "link_id": "ded04565-e337-4ea1-a775-ee5e00541089",
                 "nodes": [
                     {
                         "adapter_number": 0,
@@ -247,8 +247,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e2",
-                            "x": 1,
-                            "y": 36
+                            "x": 2,
+                            "y": 37
                         },
                         "node_id": "69b9e37c-d345-43f0-8e32-9fe0da9ee896",
                         "port_number": 2
@@ -259,10 +259,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 66,
-                            "y": 8
+                            "x": 65,
+                            "y": 7
                         },
-                        "node_id": "8bc89c3e-c4bd-4ade-84e4-88c5766427af",
+                        "node_id": "77d03b85-d3af-4290-b6b0-f87902ce396b",
                         "port_number": 0
                     }
                 ],
@@ -591,7 +591,7 @@
                 },
                 "locked": false,
                 "name": "TinyLinux-1",
-                "node_id": "8bc89c3e-c4bd-4ade-84e4-88c5766427af",
+                "node_id": "77d03b85-d3af-4290-b6b0-f87902ce396b",
                 "node_type": "vmware",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -608,8 +608,8 @@
                 "symbol": ":/symbols/vmware_guest.svg",
                 "template_id": "a4ca624f-b1bf-4eda-bf00-2dd5a735ee19",
                 "width": 65,
-                "x": -964,
-                "y": -31,
+                "x": -959,
+                "y": -20,
                 "z": 1
             }
         ]
