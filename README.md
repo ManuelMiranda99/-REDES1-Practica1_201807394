@@ -96,9 +96,9 @@ Las configuraciones de VPCS son prácticamente idénticas en todos los VPCS. Ún
 
 #### VPCS 1 (PC1):
 
-Para mostrar la información de nuestra VPCS se hace uso del siguiente comando:
-
 ##### Mostrando Configuración
+
+Para mostrar la información de nuestra VPCS se hace uso del siguiente comando:
 
 ```
 show ip
@@ -144,7 +144,7 @@ Luego de eso verificamos que los cambios se hayan realizado con _show ip_. Queda
 
 #### VPCS 3 (PC3):
 
-![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/SetIPY30.PNG "Set IPY30")
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/SetIPY39.PNG "Set IPY30")
 
 ### Máquina Virtual
 
@@ -154,13 +154,13 @@ La configuración de la máquina virtual de TinyLinux se hizo uso del _Panel de 
 
 Hay dos maneras de abrir el Panel de Control. Ambas son muy intuitivas, la más sencilla es seleccionandolo en la barra de tareas en la parte inferior de la pantalla. Luego de abrir el Panel de Control encontramos lo siguiente:
 
-![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/EnterConf.PNG "Panel de Control")
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/EnterConf.png "Panel de Control")
 
 #### Entrar a la configuración de IP.
 
 Para entrar a la configuración donde colocaremos nuestra IP, daremos click en _Network_ en las opciones del panel de control. Mostrará la siguiente ventana.
 
-![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/EnterConf.PNG "Network")
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/setIPVM.png "Network")
 
 En esos cuadros de texto colocamos la IP y automáticamente nos llenará lo demás. Le damos a guardar luego de eso y podemos cerrar las ventanas.
 
@@ -200,15 +200,15 @@ A continuación se muestra una "galería" de los resultados al momento de realiz
 
 #### IP 192.168.14.30 -> 192.168.14.15
 
-![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingPCX30_VM.PNG "Ping 1430-1415")
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingPCX30_VM.png "Ping 1430-1415") 
 
 #### IP 192.168.19.15 -> 192.168.14.15
 
-![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingPCY15_VM.PNG "Ping 1915-1415")
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingPCY15_VM.png "Ping 1915-1415") 
 
 #### IP 192.168.19.30 -> 192.168.14.15
 
-![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingPCY30_VM.PNG "Ping 1930-1415")
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingPCY30_VM.png "Ping 1930-1415") 
 
 #### IP 192.168.14.15 -> 192.168.14.30
 
