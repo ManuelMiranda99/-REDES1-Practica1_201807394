@@ -96,11 +96,131 @@ Las configuraciones de VPCS son prácticamente idénticas en todos los VPCS. Ún
 
 #### VPCS 1 (PC1):
 
+Para mostrar la información de nuestra VPCS se hace uso del siguiente comando:
+
+##### Mostrando Configuración
+
+```
+show ip
+```
+
+Este nos mostrará el nombre de nuestra computadora, la IP, la máscada de red entre otros.
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/FirstShowIP.PNG "Show IP VPCS1")
+
+##### Asignar IP
+
+Luego de verificar que nuestra VPCS no tuviera una IP asignada, se prosiguió a colocarle una IP a la computadora. Para eso se hace uso del siguiente comando:
+
+```
+ip (IP) (Máscara de red) (Puerta de Enlace del router)
+```
+
+También se puede colocar la máscara de red seguida de la IP de la siguiente manera:
+
+```
+ip (IP)/(Máscara de red en decimal) (Puerta de Enlace del router)
+```
+
+Se realizó de la siguiente manera:
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/SetIPX30.PNG "Set IPX30")
+
+##### Guardar y Verificar cambios
+
+Para guardar los cambios de lo que acabamos de realizar se utilizan los siguientes comandos:
+
+```
+save
+```
+
+Luego de eso verificamos que los cambios se hayan realizado con _show ip_. Quedando de la siguiente manera:
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/SaveAndCheck.PNG "Save and Check")
+
 #### VPCS 2 (PC2):
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/SetIPY15.PNG "Set IPY15")
 
 #### VPCS 3 (PC3):
 
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/SetIPY30.PNG "Set IPY30")
+
 ### Máquina Virtual
+
+La configuración de la máquina virtual de TinyLinux se hizo uso del _Panel de Control_ para poder realizar los cambios. Debido a esto es un poco más sencillo, aunque no se guardan los cambios realizados después de volver a iniciar la red. 
+
+#### Abrir Panel de Control
+
+Hay dos maneras de abrir el Panel de Control. Ambas son muy intuitivas, la más sencilla es seleccionandolo en la barra de tareas en la parte inferior de la pantalla. Luego de abrir el Panel de Control encontramos lo siguiente:
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/EnterConf.PNG "Panel de Control")
+
+#### Entrar a la configuración de IP.
+
+Para entrar a la configuración donde colocaremos nuestra IP, daremos click en _Network_ en las opciones del panel de control. Mostrará la siguiente ventana.
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/EnterConf.PNG "Network")
+
+En esos cuadros de texto colocamos la IP y automáticamente nos llenará lo demás. Le damos a guardar luego de eso y podemos cerrar las ventanas.
+
+### Comunicación entre Nodos de la Red
+
+Para la comunicación entre computadoras se hizo uso del siguiente comando:
+
+```
+ping (IP existente en la red)
+```
+
+A continuación se muestra una "galería" de los resultados al momento de realizar ping entre las distintas computadoras.
+
+#### IP 192.168.14.30 -> 192.168.19.15
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/Pings/PC1430_PC1915.PNG "Ping 1430-1915")
+
+#### IP 192.168.14.30 -> 192.168.19.30
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/Pings/PC1430_PC1930.PNG "Ping 1430-1930")
+
+#### IP 192.168.19.15 -> 192.168.14.30
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/Pings/PC1915_PC1430.PNG "Ping 1915-1430")
+
+#### IP 192.168.19.15 -> 192.168.19.30
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/Pings/PC1915_PC1930.PNG "Ping 1915-1930")
+
+#### IP 192.168.19.30 -> 192.168.14.30
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/Pings/PC1930_PC1430.PNG "Ping 1930-1430")
+
+#### IP 192.168.19.30 -> 192.168.19.15
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VPCS/Pings/PC1930_PC1915.PNG "Ping 1930-1915")
+
+#### IP 192.168.14.30 -> 192.168.14.15
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingPCX30_VM.PNG "Ping 1430-1415")
+
+#### IP 192.168.19.15 -> 192.168.14.15
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingPCY15_VM.PNG "Ping 1915-1415")
+
+#### IP 192.168.19.30 -> 192.168.14.15
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingPCY30_VM.PNG "Ping 1930-1415")
+
+#### IP 192.168.14.15 -> 192.168.14.30
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingVM_PCX30.PNG "Ping 1415-1430")
+
+#### IP 192.168.14.15 -> 192.168.19.15
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingVM_PCY15.PNG "Ping 1415-1915")
+
+#### IP 192.168.14.15 -> 192.168.19.30
+
+![alt-text](https://github.com/ManuelMiranda99/-REDES1-Practica1_201807394/blob/master/Imgs/VM/PingVM_PCY30.PNG "Ping 1415-1930")
 
 ## Glosario
 
